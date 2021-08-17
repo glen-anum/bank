@@ -29,7 +29,7 @@ SECRET_KEY = 'n$suclay5&w4ve8pnm&0oob2d9k%pm+x=q%t000wdiss&+tid3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1", "glen-bank-fraud-detection.herokuapp.com "]
+ALLOWED_HOSTS = ["127.0.0.1", "glen-bank-fraud-detection.herokuapp.com"]
 
 
 # Application definition
