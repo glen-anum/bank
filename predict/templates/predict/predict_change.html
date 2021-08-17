@@ -1,0 +1,31 @@
+{% extends "predict/base.html" %}
+
+{% block main %}
+<!-- Modal -->
+
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+       
+        <div class="col-md-6">
+      
+            <h1>Prediction Results</h1>
+            <h3>The KNN Model classification is:  {{classification}}</h3>
+                <br>
+                <br>
+        <div>
+            note:    
+            <p>fraud : 1</p>
+            Not fraud : 0
+        </div>
+     
+       
+            
+        </div>
+        
+        
+      
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "predict/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+<!-- Modal -->
+
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <h1>Bank Fraud Detection</h1>
+            <form action="" method="post">
+                {% csrf_token %}
+                
+                {{form|crispy}}
+                <button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+            </form>
+        </div>
+        {% if classification %}
+        <h5>Prediction Results</h5>
+        <h1>The classification is {{classification}}</h1>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}
+
